@@ -248,6 +248,7 @@ function help {
     Write-Host "    claude-stats    Ver estadisticas de uso" -ForegroundColor White
     Write-Host "    claude-tips     Tips para gestionar el contexto" -ForegroundColor White
     Write-Host "    fin             Copia 'Actualiza el CLAUDE.md' al portapapeles" -ForegroundColor White
+    Write-Host "    gfin            Copia instruccion de commit+push para Claude" -ForegroundColor White
     Write-Host "    continuar       Copia mensaje de continuacion para nueva ventana" -ForegroundColor White
 
     Write-Host ""
@@ -296,6 +297,14 @@ function fin {
     "Actualiza el CLAUDE.md con el estado actual del proyecto" | Set-Clipboard
     Write-Host ""
     Write-Host "  📋 Copiado al portapapeles! Pegalo en Claude Code (Ctrl+V)" -ForegroundColor Green
+    Write-Host ""
+}
+
+# --- Guardar sesion: copia instruccion de commit+push al portapapeles ---
+function gfin {
+    "Haz commit de todos los cambios pendientes con un mensaje descriptivo en español y haz push" | Set-Clipboard
+    Write-Host ""
+    Write-Host "  📋 Copiado! Pegalo en Claude Code (Ctrl+V)" -ForegroundColor Green
     Write-Host ""
 }
 

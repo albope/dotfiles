@@ -105,6 +105,7 @@ Funciones especificas para trabajar con [Claude Code](https://docs.anthropic.com
 | `claude-stats` | Ver estadisticas de uso (mensajes, sesiones, modelos, actividad) |
 | `claude-tips` | Tips para gestionar el contexto de Claude Code |
 | `fin` | Copia al portapapeles un mensaje para que Claude actualice el CLAUDE.md antes de cerrar |
+| `gfin` | Copia al portapapeles una instruccion para que Claude haga commit+push de todos los cambios |
 | `continuar` | Copia al portapapeles un mensaje de continuacion para retomar en una nueva ventana |
 
 **Flujo recomendado al llegar al limite de contexto:**
