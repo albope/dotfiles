@@ -1,5 +1,6 @@
 # Starship prompt - Clean & informativo
 format = """
+$username\
 $directory\
 $git_branch\
 $git_status\
@@ -7,7 +8,11 @@ $nodejs\
 $python\
 $rust\
 $docker_context\
+$env_var\
 $cmd_duration\
+$fill\
+$memory_usage\
+$time\
 $line_break\
 $character"""
 
@@ -23,19 +28,25 @@ error_symbol = "[❯](bold red)"
 truncation_length = 3
 truncate_to_repo = true
 style = "bold cyan"
+read_only = " 🔒"
 
 [git_branch]
 symbol = " "
 style = "bold purple"
 
 [git_status]
+format = "[$all_status$ahead_behind]($style) "
 style = "bold red"
-ahead = "⇡${count}"
-behind = "⇣${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-modified = "!${count}"
-staged = "+${count}"
-untracked = "?${count}"
+ahead = "⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count} "
+modified = "${count}mod "
+staged = "${count}staged "
+untracked = "${count}new "
+deleted = "${count}del "
+
+[package]
+disabled = true
 
 [nodejs]
 symbol = " "
@@ -59,3 +70,29 @@ style = "bold blue"
 min_time = 2_000
 format = " [$duration]($style)"
 style = "bold yellow"
+
+# Indicador Claude Code (se muestra cuando hay sesion activa)
+[env_var.CLAUDE_CODE]
+variable = "CLAUDE_CODE"
+format = "[$symbol]($style)"
+symbol = "🤖"
+style = "bold 141"
+default = ""
+
+# RAM (alineado a la derecha, solo si supera 70%)
+[memory_usage]
+disabled = false
+threshold = 70
+format = "[$symbol$ram_pct]($style) "
+symbol = " "
+style = "bold red"
+
+# Hora alineada a la derecha
+[fill]
+symbol = " "
+
+[time]
+disabled = false
+format = "[$time]($style)"
+style = "dimmed white"
+time_format = "%H:%M"
