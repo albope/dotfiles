@@ -279,15 +279,15 @@ function help {
     Write-Host "    continuar       Copia mensaje de continuacion para nueva ventana" -ForegroundColor White
     Write-Host ""
     Write-Host "    Skills (dentro de Claude Code):" -ForegroundColor DarkCyan
-    Write-Host "    /informe-tecnico       Genera informes HTML profesionales desde .docx" -ForegroundColor DarkGray
-    Write-Host "    /revisar-ortografia    Revisa ortografia española y maquetacion HTML" -ForegroundColor DarkGray
-    Write-Host "    /configurar-workflow   Configura Claude Code integral para un proyecto" -ForegroundColor DarkGray
+    Write-Host "    /informe-tecnico       Genera informes HTML profesionales desde .docx" -ForegroundColor White
+    Write-Host "    /revisar-ortografia    Revisa ortografia española y maquetacion HTML" -ForegroundColor White
+    Write-Host "    /configurar-workflow   Configura Claude Code integral para un proyecto" -ForegroundColor White
     Write-Host ""
     Write-Host "    Agentes (dentro de Claude Code):" -ForegroundColor DarkCyan
-    Write-Host "    @frontend-designer     Diseño UI/UX premium (Linear/Stripe/Vercel)" -ForegroundColor DarkGray
-    Write-Host "    @taste-frontend        Director creativo anti-slop (diales: variance/motion/density)" -ForegroundColor DarkGray
-    Write-Host "    @backend-architect     Arquitectura de APIs modernas y escalables" -ForegroundColor DarkGray
-    Write-Host "    @security-auditor      Auditoria de seguridad (OWASP Top 10)" -ForegroundColor DarkGray
+    Write-Host "    @frontend-designer     Diseño UI/UX premium (Linear/Stripe/Vercel)" -ForegroundColor White
+    Write-Host "    @taste-frontend        Director creativo anti-slop (diales: variance/motion/density)" -ForegroundColor White
+    Write-Host "    @backend-architect     Arquitectura de APIs modernas y escalables" -ForegroundColor White
+    Write-Host "    @security-auditor      Auditoria de seguridad (OWASP Top 10)" -ForegroundColor White
 
     Write-Host ""
     Write-Host "  ⌨️  ATAJOS DE TECLADO" -ForegroundColor DarkCyan
