@@ -285,6 +285,7 @@ function help {
     Write-Host ""
     Write-Host "    Agentes (dentro de Claude Code):" -ForegroundColor DarkCyan
     Write-Host "    @frontend-designer     Diseño UI/UX premium (Linear/Stripe/Vercel)" -ForegroundColor DarkGray
+    Write-Host "    @taste-frontend        Director creativo anti-slop (diales: variance/motion/density)" -ForegroundColor DarkGray
     Write-Host "    @backend-architect     Arquitectura de APIs modernas y escalables" -ForegroundColor DarkGray
     Write-Host "    @security-auditor      Auditoria de seguridad (OWASP Top 10)" -ForegroundColor DarkGray
 
